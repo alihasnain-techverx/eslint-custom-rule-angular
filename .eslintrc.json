@@ -45,6 +45,15 @@
         "plugin:@angular-eslint/template/recommended"
       ],
       "rules": {}
+    },
+    {
+      "files": ["*.json"],
+      "parser": "eslint-plugin-package-json-dependencies",
+      "plugins": ["package-json-dependencies"],
+      "rules": {
+        "package-json-dependencies/controlled-versions": "error"
+      }
+
     }
   ]
 }
